@@ -1,16 +1,23 @@
-# React + Vite
+# // PURGE_CACHE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A digital ceremony for the modern developer.
 
-Currently, two official plugins are available:
+## 01 // THE CONCEPT
+We debug our code, but we never debug our brains. `// PURGE_CACHE` is a terminal-based ritual that treats mental stress as "corrupted memory segments." 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 02 // HOW IT WORKS
+- **Identify**: Type your current "system load" (your worry).
+- **Analyze**: Google Gemini 1.5 Flash acting as "The Core" (a stoic OS) evaluates the emotional weight.
+- **Color Shift**: The UI shifts color based on the sentiment (Red for Critical, Blue for Melancholy).
+- **Patch**: The Core generates a poetic "system patch" to reframe your perspective.
+- **Purge**: Visual glitch effects "delete" the thought from your local RAM.
 
-## React Compiler
+## 03 // TECH STACK
+- **Frontend**: React + Vite
+- **AI**: Gemini 1.5 Flash (Direct Integration)
+- **Vibe**: CSS Scanlines, Glitch Keyframes, Fira Code Typography
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 04 // INSTALLATION
+1. `npm install`
+2. Create a `.env` with `VITE_GEMINI_API_KEY`
+3. `npm run dev`
