@@ -14,7 +14,7 @@ We debug our code, but we never debug our brains. `// PURGE_CACHE` is a terminal
 
 ## 03 // TECH STACK
 - **Frontend**: React + Vite
-- **AI**: Gemini 1.5 Flash (Direct Integration)
+- **AI**: Gemini 2.5 Flash (Direct Integration)
 - **Vibe**: CSS Scanlines, Glitch Keyframes, Fira Code Typography
 
 ## 04 // INSTALLATION
