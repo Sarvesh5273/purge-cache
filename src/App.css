@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Fira Code', monospace;
+  background-color: #050505;
+  color: #33ff00;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #050505;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* The Main Terminal Box */
+.terminal-container {
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #33ff00;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(51, 255, 0, 0.2);
+  position: relative;
+  transition: all 1s ease;
+  background: rgba(0, 20, 0, 0.8);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CRT Scanline Effect Overlay */
+.scanlines {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* Input Styling */
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.5rem;
+  width: 100%;
+  outline: none;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+  margin-top: 30px;
+  background: transparent;
+  border: 1px solid;
+  color: inherit;
+  padding: 15px 30px;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.glitch-text {
+  font-size: 1.2rem;
+  animation: glitch 0.2s infinite;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Typewriter Effect for the Patch */
+.typewriter-container {
+  display: inline-block;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: pre-wrap; /* Allows text to wrap if too long */
+  margin: 0;
+  letter-spacing: .10em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  max-width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
